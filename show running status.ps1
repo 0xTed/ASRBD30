@@ -1,0 +1,1 @@
+﻿Get-Service | where {$_.status -eq "Running"} | Out-File "ServiceRunning.csv"

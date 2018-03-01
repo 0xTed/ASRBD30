@@ -8,12 +8,12 @@ comparer le prix de l'objet avec le prix donné par l'util
 #-----------------------------------SETUP---------------------------------------#
 
 #Charger les classes
-. $PSScriptRoot\Class\ObjectJP.ps1
+. .\Class\ObjectJP.ps1
 . .\Class\UserJP.ps1
 
 #Charger les fonctions
-. C:\Users\caca\Desktop\0xTEDPowershell\Function\FuncjustePrix.ps1
-. C:\Users\caca\Desktop\0xTEDPowershell\Function\ObjectValue.ps1
+. .\Function\FuncjustePrix.ps1
+. .\Function\ObjectValue.ps1
 
 #Choose un objet en random
 $ChooseObject = Get-Random("un RER B","une Guitare","une Chaise","une Horloge","une Batterie")

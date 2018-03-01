@@ -9,7 +9,7 @@
             #------------------------------------------------------------------#
                                                 "
             #DEBBUGUNG LINE#
-            Write-Host $ObjetJP.Price
+
             #Check si il à rentré un chiffre
 
               if ($AnswerUser -notmatch '^\d+$'){
@@ -30,7 +30,7 @@
             #             C'est plus grand, tu perd une vie                    #
             #                    Il te reste  $($UserJP.Life) vie                            #
             #------------------------------------------------------------------#" -ForegroundColor yellow
-            -
+            
         }
         elseif ($AnswerUser -gt $ObjetJP.Price){
             $UserJP.Life--
@@ -61,7 +61,8 @@
             #------------------------------------------------------------------#
             #                           Tu as perdu !                          #
             #              Appuie sur Entrée pour fermer le jeu                #
-            #------------------------------------------------------------------#"
+            #------------------------------------------------------------------#
+                        ( C'était $($ObjetJP.Price) € sale boloss )"
     Exit 0
 
 }

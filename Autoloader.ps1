@@ -1,5 +1,5 @@
-﻿$Files = Get-ChildItem -path ".\Class"
+﻿$Files = Get-ChildItem -path ("$PSScriptRoot\Class")
 
 foreach ($f in $Files) {
-    . ".\Class\$($f.Name)"
+    . ("$PSScriptRoot\Class\"+$f.Name)
 }

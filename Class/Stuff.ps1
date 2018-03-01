@@ -18,4 +18,3 @@ Class Stuff {
         return $rand
     }
 }
-

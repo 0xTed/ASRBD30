@@ -16,7 +16,6 @@ $Price = $Object.SetRandomPrice()
 $Object.Display()
 Write-Host "";Write-Host "";Write-Host "";
 do{
-    $Price
     $Player.Display()
     Write-Host "";
     [int] $Devine = Read-Host "Le prix Svp ? "

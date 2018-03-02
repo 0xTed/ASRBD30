@@ -21,13 +21,15 @@ Class Player : Stuff {
         return $strg;
     }
 
-    [string]Lose($NombreCoeur){
-        for($i=0;$i -lt 11;$i++){
-            $this.Display()
-        }
-        return $this.Display()
-    }
-
 }
 
 $Player = New-Object -type Player
+
+
+$Adversiare = New-Object -type Player
+
+$Adversiare.Coeurs = 5
+
+$Player.Coeurs
+
+$Adversiare.Coeurs
